@@ -1,0 +1,8 @@
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.csprojAssemblyReference.cache
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.GeneratedMSBuildEditorConfig.editorconfig
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.AssemblyInfoInputs.cache
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.AssemblyInfo.cs
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.csproj.CoreCompileInputs.cache
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.MvcApplicationPartsAssemblyInfo.cache
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.RazorAssemblyInfo.cache
+/home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.RazorAssemblyInfo.cs
