@@ -1,0 +1,29 @@
+@model CRUD.Car
+@{
+
+       var carro = Model.Modelo;
+    ViewData["Title"] = "Editar um "+ carro;
+
+
+}
+
+<Form asp-controller="Car" asp-action="Edita">
+@Html.Label("Marca: ")
+@Html.TextBoxFor(model => Model.Marca)
+<br/>
+@Html.Label("Modelo: ")
+@Html.TextBoxFor(model => Model.Modelo)
+<br/>
+@Html.Label("Versao: ")
+@Html.TextBoxFor(model => Model.Ano)
+<br/>
+ @Html.Label("Km's: ")
+@Html.TextBoxFor(model => Model.Quilometragem)
+<br/>
+ @Html.Label("Obs: ")
+@Html.TextBoxFor(model => Model.Observacao)
+<br/>
+<button type="subbmit">Editar Carro</button>
+</Form>
+</br>
+@Html.ActionLink("Voltar", "Index")

@@ -1,0 +1,26 @@
+@model CRUD.Car;
+@{
+    ViewData["Title"] = " Apagar Carro";
+}
+
+<form asp-controller="Car" asp-action="Delet">
+@Html.Label("Marca: ")
+@Html.DisplayFor(model => Model.Marca)
+<br/>
+@Html.Label("Modelo: ")
+@Html.DisplayFor(model => Model.Modelo)
+<br/>
+@Html.Label("Versao: ")
+@Html.DisplayFor(model => Model.Ano)
+<br/>
+ @Html.Label("Km's: ")
+@Html.DisplayFor(model => Model.Quilometragem)
+<br/>
+ @Html.Label("Obs: ")
+@Html.DisplayFor(model => Model.Observacao)
+<br/>
+<button type="submit">Apagar Carro</button>
+<br/>
+</form>
+
+@Html.ActionLink("Voltar", "Index")

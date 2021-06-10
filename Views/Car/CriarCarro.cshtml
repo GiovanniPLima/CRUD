@@ -1,0 +1,33 @@
+@model CRUD.Car
+@{
+    ViewData ["Title"] = "Carros Disponiveis";
+
+}
+
+
+<form asp-controller="Car" asp-action="Criar" >
+
+ @Html.Label("Marca")
+ @Html.TextBox("Marca")
+ <br/>
+
+  @Html.Label("Modelo")
+ @Html.TextBox("Modelo")
+  <br/>
+
+ @Html.Label("Ano")
+ @Html.TextBox("Ano")
+  <br/>
+
+ @Html.Label("Km's")
+ @Html.TextBox("Quilometragem")
+  <br/>
+
+ @Html.Label("Obs ")
+ @Html.TextBox("Observacao")
+  <br/>
+
+ <button type="subbmit"> Criar Carro</button>
+
+
+</form>

@@ -1,0 +1,68 @@
+@model List<CRUD.Car>
+@{
+    ViewData["Title"] = "Carros Disponiveis";
+}
+
+<h1> Carros Disponiveis</h1>
+
+@Html.ActionLink("Adicionar novo Carro","CriarCarro")
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.Label("ID")
+            </th>
+            <th>
+                @Html.Label("Marca")
+            </th>
+            <th>
+                @Html.Label("Modelo")
+            </th>
+            <th>
+                @Html.Label("Ano")
+            </th>
+             <th>
+                @Html.Label("Quilometragem")
+            </th>
+             <th>
+                @Html.Label("Obersevações")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+<tbody>
+
+    @foreach (var item in Model)
+    {
+         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quilometragem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacao)
+            </td>
+             <td>
+            @Html.ActionLink("Apagar", "Apagar", new{id = item.Id})
+            </td>
+            <td>
+                @Html.ActionLink("Editar","Editar", new{id = item.Id})
+            </td>
+        </tr>
+
+       
+    }
+       
+</tbody>

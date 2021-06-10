@@ -1,0 +1,21 @@
+@model CRUD.Car
+
+@{
+    ViewData["Title"] = "Carro Inserido";
+}
+@Html.Label("Marca: ")
+@Html.DisplayFor(model => Model.Marca)
+<br/>
+@Html.Label("Modelo: ")
+@Html.DisplayFor(model => Model.Modelo)
+<br/>
+@Html.Label("Versao: ")
+@Html.DisplayFor(model => Model.Ano)
+<br/>
+ @Html.Label("Km's: ")
+@Html.DisplayFor(model => Model.Quilometragem)
+<br/>
+ @Html.Label("Obs: ")
+@Html.DisplayFor(model => Model.Observacao)
+<br/>
+@Html.ActionLink("Voltar", "Index")

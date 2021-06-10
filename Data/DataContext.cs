@@ -1,4 +1,7 @@
 
+using System;
+using Microsoft.EntityFrameworkCore;
+
 namespace CRUD 
 {
     public class DataContext : DbContext
@@ -7,7 +10,8 @@ namespace CRUD
         {
 
         }
-        DbSet<Users> Users {get; set;}
+       public DbSet<Car> tb_AnnuncioWebmotors {get; set;}
+
 
     }
 }
