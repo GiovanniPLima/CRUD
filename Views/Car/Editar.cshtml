@@ -1,13 +1,13 @@
 @model CRUD.Car
 @{
 
-       var carro = Model.Modelo;
-    ViewData["Title"] = "Editar um "+ carro;
+   
+    ViewData["Title"] = "Suceesso";
 
 
 }
 
-<Form asp-controller="Car" asp-action="Edita">
+<Form asp-controller="Car" asp-action="Editar">
 @Html.Label("Marca: ")
 @Html.TextBoxFor(model => Model.Marca)
 <br/>

@@ -70,14 +70,10 @@
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.Views.pdb
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.csproj.CopyComplete
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/CRUD.genruntimeconfig.cache
-/home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Buscar.cshtml.g.cs
 /home/giovanni/Develop/CRUD/bin/Debug/net5.0/System.Net.Http.Formatting.dll
 /home/giovanni/Develop/CRUD/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
 /home/giovanni/Develop/CRUD/bin/Debug/net5.0/Refit.dll
-/home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Criar.cshtml.g.cs
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/CriarCarro.cshtml.g.cs
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Index.cshtml.g.cs
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Apagar.cshtml.g.cs
 /home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Editar.cshtml.g.cs
-/home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Delet.cshtml.g.cs
-/home/giovanni/Develop/CRUD/obj/Debug/net5.0/Razor/Views/Car/Edita.cshtml.g.cs

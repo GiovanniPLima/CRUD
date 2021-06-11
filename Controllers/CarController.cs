@@ -20,23 +20,7 @@ namespace CRUD
     {
         this.db = db;
     }
-       
-
-     [HttpGet]
-     public async Task<ActionResult> Editar(Car car)
-     {
-         var carro = db.tb_AnnuncioWebmotors.Find(car.Id);
-         return View("Editar", carro);
-     }
-
-   //MEsmo erro do Delete - Retornando Null
-     public async Task<ActionResult> Edita(Car car)
-     {
-         var carro = db.tb_AnnuncioWebmotors.Find(car.Id);
-         db.tb_AnnuncioWebmotors.Update(carro);
-         return View();
-     }
-        public async Task<ActionResult> Index( )
+               public async Task<IActionResult> Index( )
         {
           
             var lista = await db.tb_AnnuncioWebmotors.ToListAsync();
@@ -45,32 +29,20 @@ namespace CRUD
                 
         }
 
-        public ActionResult CriarCarro()
+        [HttpGet]
+        public IActionResult CriarCarro()
         {
             return View();
         }
-        public ActionResult Buscar(Car car)
-        
-        {
-
-            if(ModelState.IsValid)
-            {
-                 
-                 return View("Buscar", car);
-            }
-            else
-            {
-                return View("Index");
-            }
-        }
+     
           
-        public async Task<ActionResult> Criar(Car car)
+        public async Task<IActionResult> CriarCarro(Car car)
         {
             if(ModelState.IsValid)
             {
                 db.Add(car);
                 await db.SaveChangesAsync();
-                return View("Criar", car);
+               return RedirectToAction("Index");
             }
             else
             {
@@ -78,9 +50,9 @@ namespace CRUD
             }
         }
             [HttpGet]
-     public async Task<ActionResult> Apagar(Car car)
+     public  IActionResult Apagar(int id)
      {
-            var carro = db.tb_AnnuncioWebmotors.Find(car.Id);
+            var carro = db.tb_AnnuncioWebmotors.Find(id);
            
              return View("Apagar",carro);
          
@@ -88,14 +60,32 @@ namespace CRUD
      }
     
     //RETORNANDO NULO VERIFICAR O PORQUE 
-     public async Task<ActionResult> Delet(Car car)
+    [HttpPost]
+     public async Task<IActionResult> Apagar(Car car)
      {
-         var carro = db.tb_AnnuncioWebmotors.Find(car.Id);
-         db.Remove(carro);
+         
+         db.tb_AnnuncioWebmotors.Remove(car);
          await db.SaveChangesAsync();
-         return View("Delet");
+         return RedirectToAction("Index");
        
      }
+      [HttpGet]
+     public IActionResult Editar(int id)
+     {
+         var carro = db.tb_AnnuncioWebmotors.Find(id);
+         return View("Editar", carro);
+     }
+
+ 
+    [HttpPost]
+     public async Task<IActionResult> Editar(Car car)
+     {
+        
+         db.tb_AnnuncioWebmotors.Update(car);
+         await db.SaveChangesAsync();
+        return RedirectToAction("Index");
+     }
+
 
     
     }
