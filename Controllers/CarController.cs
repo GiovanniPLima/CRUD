@@ -59,7 +59,7 @@ namespace CRUD
          
      }
     
-    //RETORNANDO NULO VERIFICAR O PORQUE 
+ 
     [HttpPost]
      public async Task<IActionResult> Apagar(Car car)
      {
